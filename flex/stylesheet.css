@@ -1,0 +1,381 @@
+body
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #595b66;
+    background-color: #e2e2e2;
+}
+p
+{
+    line-height: 2em;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #888;
+}
+h1,
+h2,
+h3
+{
+     color: #888;
+}
+h1
+{
+    padding-bottom: 15px;
+    border-bottom: 3px solid #888;
+}
+a
+{
+    color: #20b2aa;
+}
+.box
+{
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+.box-item
+{
+    font-size: 5em;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #20b2aa;
+}
+.height200px
+{
+    height: 200px;
+}
+.height600px
+{
+    height: 600px;
+}
+.font1em
+{
+    font-size: 1em;
+}
+.font2em
+{
+    font-size: 2em;
+}
+.font3em
+{
+    font-size: 3em;
+}
+.font4em
+{
+    font-size: 4em;
+}
+.box-item1
+{
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item2
+{
+    width: 80px;
+    height: 50px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item3
+{
+    width: 250px;
+    height: 50px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item4
+{
+    width: 50px;
+    height: 200px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item5
+{
+    width: 50px;
+    height: 250px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item6
+{
+    width: 50px;
+    height: 100px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item7
+{
+    width: 50px;
+    height: 150px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item8,
+.box-item9,
+.box-item10,
+.box-item11
+{
+    width: 50px;
+    margin: 10px;
+    background-color: #20b2aa;
+}
+.box-item12,
+.box-item13,
+.box-item14,
+.box-item15,
+.box-item16
+{
+    font-size: 5em;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #20b2aa;
+}
+
+/*flex-direction属性*/
+.row
+{
+    display: flex;
+    flex-direction: row;
+}
+.row-reverse
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.column
+{
+    display: flex;
+    flex-direction: column;
+}
+.column-reverse
+{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+/*flex-wrap属性*/
+.nowrap
+{
+    display: flex;
+
+    flex-wrap: nowrap;
+}
+.wrap
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.wrap-reverse
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+/*flex-flow属性*/
+.flex-flow
+{
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/*justify-center属性*/
+.j-c-flex-start
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.j-c-flex-end
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.j-c-center
+{
+    display: flex;
+    justify-content: center;
+}
+.j-c-space-between
+{
+    display: flex;
+    justify-content: space-between;
+}
+.j-c-space-around
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*align-items属性*/
+.a-i-flex-start
+{
+    display: flex;
+    align-items: flex-start;
+}
+.a-i-flex-end
+{
+    display: flex;
+    align-items: flex-end;
+}
+.a-i-center
+{
+    display: flex;
+    align-items: center;
+}
+.a-i-stretch
+{
+    display: flex;
+    align-items: stretch;
+}
+.a-i-baseline
+{
+    display: flex;
+    align-items: baseline;
+}
+
+/*align-content属相*/
+.a-c-flex-start
+{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+.a-c-flex-end
+{
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+}
+.a-c-center
+{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.a-c-space-between
+{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.a-c-space-around
+{
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
+}
+.a-c-stretch
+{
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+/*order属性*/
+.order
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box-item12
+{
+    order: -1;
+}
+.box-item13
+{
+    order: 5;
+}
+.box-item14
+{
+    order: 1;
+}
+.box-item15
+{
+    order: 4;
+}
+.box-item16
+{
+    order: 2;
+}
+
+/*flex-grow属性*/
+.flex-grow
+{
+    display: flex;
+}
+.box-item17,
+.box-item18
+{
+    font-size: 5em;
+    line-height: 200px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    color: #fff;
+    background-color: #20b2aa;
+}
+.box-item17
+{
+    flex-grow: 1;
+}
+.box-item18
+{
+    flex-grow: 2;
+}
+
+/*flex-shrink属性*/
+.flex-shrink
+{
+    display: flex;
+}
+.box-item19,
+.box-item20,
+.box-item21,
+.box-item22,
+.box-item23,
+.box-item24,
+.box-item25,
+.box-item26,
+.box-item27
+{
+    font-size: 5em;
+    line-height: 200px;
+
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #20b2aa;
+}
+.box-item19,
+.box.item20,
+.box-item21,
+.box-item22,
+.box-item23,
+.box-item24,
+.box-item25,
+.box-item26,
+.box-item27
+{
+    flex-shrink: 1;
+}
+.box-item20
+{
+    flex-shrink: 0;
+}
