@@ -1,0 +1,13 @@
+.button {
+  display: flex;
+  justify-content: center;
+}
+input {
+  margin-right: 5px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background-color: #000;
+}

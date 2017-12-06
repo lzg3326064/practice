@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>网页换肤</title>
+	<link rel="stylesheet" type="text/css" href="green.css" id="cssFile">
+</head>
+<body>
+	<div class="container">
+		<div id="change">
+			<input type="button" id="red" title="red">
+			<input type="button" id="green" title="green">
+			<input type="button" id="black" title="black">
+		</div>
+		<div class="header">
+			<ul>
+				<li><a href="#">新闻</a></li>
+				<li><a href="#">娱乐</a></li>
+				<li><a href="#">体育</a></li>
+				<li><a href="#">电影</a></li>
+				<li><a href="#">音乐</a></li>
+			</ul>
+		</div>
+	</div>
+
+<script>
+	window.onload = function() {
+		var css = document.getElementById("cssFile");
+		var btn = document.getElementsByTagName("input")
+		for( var i = 0; i < btn.length; i++) {
+			btn[i].onclick = function () {
+				switch(this.getAttribute("title")) {
+					case "red" :
+						css.setAttribute("href","red.css"); break;
+					case "green" :
+						css.setAttribute("href","green.css"); break;
+					case "black" :
+						css.setAttribute("href","black.css"); break;
+				}
+			}
+		}
+	}
+</script>
+</body>
+</html>
