@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>百度输入法</title>
+	<style>
+		body,div,ul,li {
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			width: 100px;
+			margin: 40px auto;
+		}
+		#typewriting {
+			list-style: none;
+			display: none;
+			margin-top: 20px;
+			font-size: 0.8em;
+			border: 1px solid #333;
+		}
+		#typewriting li {
+			padding: 5px;
+			cursor: pointer;
+		}
+		#typewriting li:hover {
+			cursor: pointer;
+			background-color: #ccc;
+		}
+		#typewriting li:last-child {
+			border-top:  1px solid #333;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<input type="button" value="输入法" id="btn">
+		<ul id="typewriting">
+			<li>手写</li>
+			<li>拼音</li>
+			<li id="close">关闭</li>
+		</ul>
+	</div>
+
+<script>
+	var btn = document.getElementById("btn");
+	var close = document.getElementById("close");
+	var type = document.getElementById("typewriting");
+	btn.addEventListener("click",function() {
+		type.style.display = type.style.display == "block" ? "none" : "block"
+})
+	close.addEventListener("click",function() {
+		type.style.display = "none";
+	})
+</script>
+</body>
+</html>

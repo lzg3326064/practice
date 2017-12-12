@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>图片列表：鼠标移入/移出改变图片透明度</title>
+	<style>
+		.container {
+			border: 1px solid #000;
+			width: 550px;
+			padding: 5px;
+			margin: 0 auto;
+		}
+		ul {
+			padding: 0;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+		}
+		ul li {
+			margin: 5px;
+			display: inline-block;
+			width: 150px;
+			height: 150px;
+			border: 1px solid #aaa;
+			opacity: 0.5;
+		}
+		img {
+			width: 150px;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513063538885&di=a86f2d544e19d583f80d263e3eea7961&imgtype=0&src=http%3A%2F%2Fbaike.steelhome.cn%2Fuploads%2F200906%2Fs_1245567741OR9v2cUP.gif" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513063538884&di=f9ce08965b78eeda24110dd4022de25c&imgtype=0&src=http%3A%2F%2Fa1.att.hudong.com%2F73%2F47%2F01300000680275125923470073348.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513063538881&di=8a01a7d29b8ee6aaf8b4a53b1e056b50&imgtype=0&src=http%3A%2F%2Fpic.baike.soso.com%2Fp%2F20131221%2Fbki-20131221153611-1021913531.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513063538880&di=6ae166cda07769dc32d2b435646d8d73&imgtype=0&src=http%3A%2F%2Fimg31.ddimg.cn%2F4%2F7%2F1077150001-1_b.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513063538878&di=c669297f0b65a768bf2a5d66d56d3f20&imgtype=0&src=http%3A%2F%2Fimg.zwbk.org%2Fbaike%2Fspic%2F2011%2F03%2F15%2F20110315044636701_5436.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513063579722&di=3230ce8a64ed6b57aa8af7293cb16646&imgtype=jpg&src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D996853650%2C3179065510%26fm%3D214%26gp%3D0.jpg" alt=""></li>
+			<li><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3485930244,1320675343&fm=27&gp=0.jpg" alt=""></li>
+			<li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2829056523,945539648&fm=27&gp=0.jpg" alt=""></li>
+			<li><img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2791025509,510883895&fm=27&gp=0.jpg" alt=""></li>
+		</ul>
+	</div>
+
+
+<script>
+	var oLi = document.getElementsByTagName("li");
+	window.onload = function() {
+		for( var i = 0; i < oLi.length; i++) {
+			oLi[i].onmouseover = function() {
+				this.style.cssText = "opacity:1; cursor:pointer";
+			}
+			oLi[i].onmouseout = function() {
+				this.style.cssText = "";
+			}
+		}
+	}
+</script>
+</body>
+</html>
