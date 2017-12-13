@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>鼠标移过，修改图片路径</title>
+	<style>
+		body,div,ul,li,img {
+			padding: 0;
+			margin: 0;
+		}
+		body {
+			padding-top: 20px;
+			background-color: #000;
+		}
+		.container {
+			width: 340px;
+			padding: 10px;
+			margin: 0 auto;
+			background-color: #fff;
+			border-radius: 5px;
+			text-align: center;
+		}
+		img {
+			width: 80px;
+			display: block;
+			box-sizing: border-box;
+			height: 80px;
+			border-radius: 5px;
+		}
+		ul {
+			list-style: none;
+		}
+		li {
+			display: inline-block;
+		}
+		#big {
+			float: left;
+			margin-right: 8px;
+			width: 252px;
+			height: 240px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891698&di=56c3d192caed8ffcbd258e684c1fb7dd&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20130224%2F20130224201650-793283452.jpg" id="big">
+		<ul>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891698&di=56c3d192caed8ffcbd258e684c1fb7dd&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20130224%2F20130224201650-793283452.jpg"></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891698&di=d33576be980ac5c8b5be08cdeab77b93&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Faa18972bd40735fa8e3401549e510fb30e240812.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891696&di=8006d66387fb626f9763562f8752c3ea&imgtype=0&src=http%3A%2F%2Fe.hiphotos.baidu.com%2Fzhidao%2Fwh%253D600%252C800%2Fsign%3Db8b98a5a5ab5c9ea62a60be5e5099a38%2F8601a18b87d6277f120d8e6929381f30e924fc40.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891694&di=9c35dc2b333f8dbfd02ba2e99dff843c&imgtype=0&src=http%3A%2F%2Fp1.music.126.net%2FCZgqZr-BaI4UVYYoYhC35Q%3D%3D%2F7720770650485639.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891693&di=9c35006576e93a85df6087f753daf7cf&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20110924%2F20110924141035-1640228482.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891693&di=6814b8dc6c1cd94a3bc72659f37ebb64&imgtype=0&src=http%3A%2F%2Fwww.qqzhi.com%2Fwenwen%2Fuploads%2Fpic.wenwen.soso.com%2Fp%2F20160607%2F20160607191250-1342022678.jpg" alt=""></li>
+			<li><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=687718413,3788400336&fm=27&gp=0.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891690&di=d850fd1d3ba0a65bc2e82e7cfeda7078&imgtype=0&src=http%3A%2F%2Fimg1.gamersky.com%2Fimage2014%2F09%2F20140924lj_3%2Fgamersky_157small_314_201492417366F0.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891689&di=6a3f471c421e1240c62660b6f8230b15&imgtype=0&src=http%3A%2F%2Fwenwen.soso.com%2Fp%2F20110529%2F20110529142851-1645950870.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513182891684&di=a606653528f33ebd12616cd634c8c779&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F342ac65c103853431cdec6a39413b07eca80881b.jpg" alt=""></li>
+			<li><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1513183058148&di=17939cbd6a3329f978543cb9d5679c07&imgtype=0&src=http%3A%2F%2Fimg2.100bt.com%2Fupload%2Fttq%2F20120909%2F1347177142344.jpg"></li>
+		</ul>
+	</div>
+<script>
+	var placeholder = document.getElementById("big");
+	var oImg = document.getElementsByTagName("ul")[0].getElementsByTagName("img"); 
+	window.onload = function() {
+		for( var i = 0 ; i < oImg.length; i++) {
+			oImg[i].onmouseover = function() {
+				var source = this.getAttribute("src");
+				placeholder.setAttribute("src",source);
+			}
+		}
+	}
+</script>
+</body>
+</html>

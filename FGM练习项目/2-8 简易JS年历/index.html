@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>简易JS年历</title>
+	<style>
+		.container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 5px;
+		}
+		ul {
+			background-color: #ddd;
+			padding: 5px;
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			width: 240px;
+		}
+		li {
+			display: inline-block;
+			background-color: #333;
+			color: #fff;
+			padding: 3px;
+			box-sizing: border-box;
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			text-align: center;
+		}
+		span {
+			font-size: 0.8em;
+		}
+		#text {
+			background-color: #eee;
+			width: 250px;
+			height: 80px;
+			box-sizing: border-box;
+			font-size: 0.8em;
+			padding: 10px;
+		}
+		h2,h3 {
+			padding: 0;
+			margin: 0;
+		}
+		.active {
+			background-color: #fff;
+			color: red;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<ul>
+			<li class="active"><strong>1</strong><br><span>JAN</span></li>
+			<li><strong>2</strong><br><span>FER</span></li>
+			<li><strong>3</strong><br><span>MAR</span></li>
+			<li><strong>4</strong><br><span>APR</span></li>
+			<li><strong>5</strong><br><span>MAY</span></li>
+			<li><strong>6</strong><br><span>JUN</span></li>
+			<li><strong>7</strong><br><span>JUL</span></li>
+			<li><strong>8</strong><br><span>AUG</span></li>
+			<li><strong>9</strong><br><span>SEP</span></li>
+			<li><strong>10</strong><br><span>OCT</span></li>
+			<li><strong>11</strong><br><span>NOV</span></li>
+			<li><strong>12</strong><br><span>DEC</span></li>
+		</ul>
+		<div id="text">
+			<h2><span id="month">1</span>
+			月节日
+			</h2>
+			<h3 id="festival">元旦：1月1日至3日放假三天。</h3>
+		</div>
+	</div>
+
+<script>
+	var oArr = [
+		"元旦：1月1日至3日放假三天。",
+		"春节：2月2日至8日放假7天。",
+		"妇女节：3月8日妇女节，与我无关。",
+		"清明节：4月3日至5日放假3天",
+		"劳动节：4月30日至5月2日放假3天。",
+		"端午节：6月4日至6日放假3天。",
+		"小暑：7月7日小暑。不放假。",
+		"七夕节：8月6日七夕节。不放假。",
+		"中秋节：9月10日至12日放假3天。",
+		"国庆节：10月1日至7日放假7天。",
+		"立冬：11月8日立冬。不放假。",
+		"艾滋病日:12月1日<br />废除奴隶制国际日:12月2日。"
+	];
+	var oFest = document.getElementById("festival");
+	var oMon = document.getElementById("month");
+	var oLi = document.getElementsByTagName("li");
+
+	window.onload = function() {
+		for( var i = 0; i < oLi.length; i++) {
+			oLi[i].index = i;
+			oLi[i].onmouseover = function() {
+				for ( j = 0 ; j < oLi.length; j++) {
+					oLi[j].className = ""; //删除li元素的样式
+					this.className = "active"; // 添加active样式
+				}
+			oMon.innerHTML = parseInt(this.index + 1); 
+			oFest.innerHTML = oArr[this.index];
+			}
+		}
+	}
+</script>
+</body>
+</html>
