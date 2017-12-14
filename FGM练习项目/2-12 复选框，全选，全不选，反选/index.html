@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>复选框</title>
+	<style>
+		.container {
+			width: 100px;
+			margin: 0 auto;
+			border: 1px solid #000;
+			border-radius: 5px;
+			padding: 10px;
+			font-size: 0.8em;
+		}
+		.header {
+			border-bottom: 1px solid #000;
+			padding-bottom: 5px;
+		}
+		#body {
+			padding-top: 10px;
+		}
+		#body label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<label>
+				<input type="checkbox" id="allSelect">
+				<span id="text">全选</span>
+				<a href="#" id="reverse">反选</a>
+			</label>
+		</div>
+		<div id ="body">
+			<label>
+				<input type="checkbox">  选项(一)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(二)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(三)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(四)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(五)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(六)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(七)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(八)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(九)
+			</label>  
+			<label>  
+				<input type="checkbox">  选项(十)
+			</label>
+		</div>
+		
+	</div>
+<script>
+	var oSelect = document.getElementById("allSelect");
+	var oReverse = document.getElementById("reverse");
+	var oCheckList = document.getElementById("body").getElementsByTagName("input");
+	var oText = document.getElementById("text");
+
+	window.onload = function() {
+		oSelect.onclick = function() {
+			if(!oSelect.getAttribute("checked")) {
+				for ( var i = 0; i < oCheckList.length; i++) {
+					oCheckList[i].checked = true;
+					oSelect.setAttribute("checked","true");
+					oText.innerHTML= "全不选";
+				} 
+			} else {
+				for ( var j = 0; j < oCheckList.length; j++) {
+					oCheckList[j].checked = false;
+					oSelect.removeAttribute("checked");
+					oText.innerHTML= "全选";
+				} 
+			}
+		}
+
+		oReverse.onclick = function() {
+			oText.innerHTML= "全选";
+			for( var n = 0; n < oCheckList.length; n ++) {
+				if(oCheckList[n].checked == true) {
+					oCheckList[n].checked = false;
+				} else {
+					oCheckList[n].checked = true;
+				}
+			}
+		}
+	}
+
+
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用typeof查看数据类型</title>
+	<style>
+		pre {
+			width: 100%;
+			color: green;
+			padding: 10px;
+			border: 1px dashed #000;
+			background-color: #eee;
+		}
+		span {
+			color: #888;
+		}
+	</style>
+</head>
+<body>
+<pre>
+&lt;script type = "text/javascript"&gt;
+	alert(typeof 123);		<span>//输出number</span>
+	alert(typeof "abc");		<span>//输出string</span>
+	alert(typeof document); 	<span>//输出object</span>
+	alert(typeof NaN);		<span>//输出number</span>
+	alert(typeof true);		<span>//输出boolean</span>
+	alert(typeof undefined);	<span>//输出undefined</span>
+	alert(typeof null);		<span>//输出object</span>
+&lt;/script&gt;
+</pre>
+<input type="button" value="点击查看数据类型" id="btn">
+<script>
+	var oBtn = document.getElementById("btn");
+
+	oBtn.addEventListener("click" , function() {
+		alert(	"typeof 123 →  " + typeof 123   + 
+			"\ntypeof 'abc' →  " + typeof "abc" +
+			"\ntypeof document →  " + typeof document +
+			"\ntypeof NaN →  " + typeof NaN +
+			"\ntypeof true →  " + typeof true +
+			"\ntypeof undefined →  " + typeof undefined +
+			"\ntypeof null →  " + typeof null 
+
+		);
+	})
+</script>
+</body>
+</html>

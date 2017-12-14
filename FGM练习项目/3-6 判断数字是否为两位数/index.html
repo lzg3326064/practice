@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>判断数字是否为两位数</title>
+	<style>
+		body {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<input type="text">
+	<input type="button" value="是否为两位数">
+
+<script>
+	var oInput = document.getElementsByTagName("input");
+
+	oInput[0].onkeyup = function() {
+		this.value = this.value.replace(/[^\d]/,"");
+	}
+
+	oInput[1].addEventListener("click",function() {
+		if (oInput[0].value.length == 0) {
+			alert("请先输入数字");
+		} else if (oInput[0].value.length == 2) {
+			alert("bingo！！2位数");
+		} else {
+			alert("错咯！这是" + oInput[0].value.length + "位数");
+		}
+	})
+</script>
+</body>
+</html>
