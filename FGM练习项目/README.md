@@ -1,0 +1,91 @@
+## 项目列表
+
+### 第一课	
+
+1. 控制Div属性
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/1-1%20%E6%8E%A7%E5%88%B6Div%E5%B1%9E%E6%80%A7)
+   - [demo](http://www.kumo-ka.com/code/FGM/1-1/index.html)
+2. 网页换肤
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/1-2%20%E7%BD%91%E9%A1%B5%E6%8D%A2%E8%82%A4)
+   - [demo](http://www.kumo-ka.com/code/FGM/1-2/index.html)
+3. 函数接收参数并弹出
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/1-3%20%E5%87%BD%E6%95%B0%E6%8E%A5%E6%94%B6%E5%8F%82%E6%95%B0%E5%B9%B6%E5%BC%B9%E5%87%BA)
+   - [demo](http://www.kumo-ka.com/code/FGM/1-3/index.html)
+4. 用循环将三个div变成红色
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/1-4%20%E7%94%A8%E5%BE%AA%E7%8E%AF%E5%B0%86%E4%B8%89%E4%B8%AAdiv%E5%8F%98%E6%88%90%E7%BA%A2%E8%89%B2)
+   - [demo](http://www.kumo-ka.com/code/FGM/1-4/index.html)
+5. 鼠标移入/移出改变样式
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/1-5%20%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%2C%E7%A7%BB%E5%87%BA%E6%94%B9%E5%8F%98%E6%A0%B7%E5%BC%8F)
+   - [demo](http://www.kumo-ka.com/code/FGM/1-5/index.html)
+6. 记住密码提示框
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/1-6%20%E8%AE%B0%E4%BD%8F%E5%AF%86%E7%A0%81%E6%8F%90%E7%A4%BA%E6%A1%86)
+   - [demo](http://www.kumo-ka.com/code/FGM/1-6/index.html)
+
+### 第二课
+
+1. 百度输入法
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-1%20%E7%99%BE%E5%BA%A6%E8%BE%93%E5%85%A5%E6%B3%95)
+   - [demo](http://www.kumo-ka.com/code/FGM/2-1/index.html)
+2. 点击div，显示其innerHTML
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-2%20%E7%82%B9%E5%87%BBdiv%E6%98%BE%E7%A4%BA%E5%85%B6innerHTML)
+   - [demo](http://www.kumo-ka.com/code/FGM/2-2/index.html)
+3. 求出数组中所有数字的和
+   - [代码]()
+   - [demo](http://www.kumo-ka.com/code/FGM/2-3/index.html)
+4. 弹出层效果
+   - [代码]()
+   - [demo](http://www.kumo-ka.com/code/FGM/2-4/index.html)
+5. 函数传参，改变div任意属性的值
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-5%20%E5%87%BD%E6%95%B0%E4%BC%A0%E5%8F%82%20%E6%94%B9%E5%8F%98div%E4%BB%BB%E6%84%8F%E5%B1%9E%E6%80%A7%E7%9A%84%E5%80%BC)
+   - [demo](http://www.kumo-ka.com/code/FGM/2-5/index.html)
+6. 图片列表：鼠标移入/移出改变图片透明度
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-6%20%E5%9B%BE%E7%89%87%E5%88%97%E8%A1%A8%20%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%85%A5%E7%A7%BB%E5%87%BA%E6%94%B9%E5%8F%98%E5%9B%BE%E7%89%87%E9%80%8F%E6%98%8E%E5%BA%A6)
+   - [demo](http://www.kumo-ka.com/code/FGM/2-6/index.html)
+7. 简易选项卡
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-7%20%E7%AE%80%E6%98%93%E9%80%89%E9%A1%B9%E5%8D%A1)
+   - [demo](http://www.kumo-ka.com/code/FGM/2-7/index.html)
+8. 简易JS年历
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-8%20%E7%AE%80%E6%98%93JS%E5%B9%B4%E5%8E%86)
+   - [demo](http://www.kumo-ka.com/code/FGM/2-8/index.html)
+9. 单一按钮显示/隐藏一播放列表收缩展开
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-9%20%E5%8D%95%E4%B8%80%E6%8C%89%E9%92%AE%E6%98%BE%E7%A4%BA%EF%BC%8C%E9%9A%90%E8%97%8F%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%94%B6%E7%BC%A9%E5%B1%95%E5%BC%80)
+   - [demo](http://www.kumo-ka.com/code/FGM/2-9/index.html)
+10. 提示框效果
+    - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-9%20%E5%8D%95%E4%B8%80%E6%8C%89%E9%92%AE%E6%98%BE%E7%A4%BA%EF%BC%8C%E9%9A%90%E8%97%8F%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E6%94%B6%E7%BC%A9%E5%B1%95%E5%BC%80)
+    - [demo](http://www.kumo-ka.com/code/FGM/2-10/index.html)
+11. 鼠标移过，修改图片路径
+    - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-11%20%E9%BC%A0%E6%A0%87%E7%A7%BB%E8%BF%87%EF%BC%8C%E4%BF%AE%E6%94%B9%E5%9B%BE%E7%89%87%E8%B7%AF%E5%BE%84)
+    - [demo](http://www.kumo-ka.com/code/FGM/2-11/index.html)
+12. 复选框(checkbox) 全选/全不选/反选
+    - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/2-12%20%E5%A4%8D%E9%80%89%E6%A1%86%EF%BC%8C%E5%85%A8%E9%80%89%EF%BC%8C%E5%85%A8%E4%B8%8D%E9%80%89%EF%BC%8C%E5%8F%8D%E9%80%89)
+    - [demo](http://www.kumo-ka.com/code/FGM/2-12/index.html)
+
+### 第三课
+
+1. 用typeof查看数据类型
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/3-1%20%E7%94%A8typeof%E6%9F%A5%E7%9C%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B)
+   - [demo](http://www.kumo-ka.com/code/FGM/3-1/index.html)
+2. 用parseInt解析数字，并求和
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/3-2%20%E7%94%A8parseInt%E8%A7%A3%E6%9E%90%E6%95%B0%E5%AD%97%EF%BC%8C%E5%B9%B6%E6%B1%82%E5%92%8C)
+   - [demo](http://www.kumo-ka.com/code/FGM/3-2/index.html)
+3. 累加按钮，自动加1
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/3-3%20%E7%B4%AF%E5%8A%A0%E6%8C%89%E9%92%AE%EF%BC%8C%E8%87%AA%E5%8A%A8%E5%8A%A01)
+   - [demo](http://www.kumo-ka.com/code/FGM/3-3/index.html)
+4. 输入两个数字，比较大小
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/3-4%20%E8%BE%93%E5%85%A5%E4%B8%A4%E4%B8%AA%E6%95%B0%EF%BC%8C%E6%AF%94%E8%BE%83%E5%A4%A7%E5%B0%8F)
+   - [demo](http://www.kumo-ka.com/code/FGM/3-4/index.html)
+5. 页面加载后累加，自加1
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/3-5%20%E9%A1%B5%E9%9D%A2%E5%8A%A0%E8%BD%BD%E5%90%8E%E7%B4%AF%E5%8A%A0%EF%BC%8C%E8%87%AA%E5%8A%A01)
+   - [demo](http://www.kumo-ka.com/code/FGM/3-5/index.html)
+6. 判断数字是否为两位数
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/3-6%20%E5%88%A4%E6%96%AD%E6%95%B0%E5%AD%97%E6%98%AF%E5%90%A6%E4%B8%BA%E4%B8%A4%E4%BD%8D%E6%95%B0)
+   - [demo](http://www.kumo-ka.com/code/FGM/3-6/index.html)
+7. 网页计算器
+   - [代码](https://github.com/lzg3326064/practice/tree/master/FGM%E7%BB%83%E4%B9%A0%E9%A1%B9%E7%9B%AE/3-7%20%E7%BD%91%E9%A1%B5%E8%AE%A1%E7%AE%97%E5%99%A8)
+   - [demo](http://www.kumo-ka.com/code/FGM/3-7/index.html)
+8. 简易网页时钟
+   - [代码]()
+   - [demo](http://www.kumo-ka.com/code/FGM/3-8/index.html)
+9. 倒计时时钟(100秒)
+   - [代码]()
+   - [demo](http://www.kumo-ka.com/code/FGM/3-9/index.html)
