@@ -19,7 +19,7 @@
 		curNum = "",					// 当前输入的数字
 		oldNum = "",					// 之前输入的数字
 		result,								// 结果
-		operator;
+		operator;							// 操作符变量
 
 // 当数字被点击，获取当前选择的数字并显示
 	var getNum = function() {
@@ -93,8 +93,6 @@
 		view.innerHTML = "0";
 	};
 
-
-
 //事件绑定
 	
 	// 绑定点击事件给所有的数字
@@ -117,5 +115,6 @@
 	reset.onclick = function() {
 		window.location = window.location;
 	}
+	
 })();
 

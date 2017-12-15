@@ -1,191 +1,192 @@
+
 /*解决移动端css3动画卡顿*/
 * {
-	-webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
+
+
 body {
-	background-image:
-    	radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
-    	radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
-  	background-attachment: fixed;
-	display: flex;
-	background-color: #fff;
-	flex-direction: column;
-	align-items: center;
-	font: 300 18px/1.6 "Source Sans Pro",sans-serif;
-	color: rgb(108,158,158);
+    font: 300 18px/1.6 'Source Sans Pro',sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: rgb(108,158,158);
+    background-color: #fff;
+    background-image: radial-gradient(50% 30% ellipse at center top, #201e40 0%, rgba(0,0,0,0) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #261226 0%, #100a1c 100%);
+    background-attachment: fixed;
+    align-items: center;
 }
+
 .calculator {
-	display: flex;
-	flex-wrap: wrap;
-	width: 400px;
-	margin-top: 10%;
-	position: relative;
+    position: relative;
+    display: flex;
+    width: 400px;
+    margin-top: 10%;
+    flex-wrap: wrap;
 }
 button {
-	width: 70px;
-	height: 70px;
-	border: none;
-	color: rgb(108,158,158);
-	background-color: rgb(24,21,51);
-	margin: 15px;
-	font-size: 1.5em;
-	transition: all 1s;
+    font-size: 1.5em;
+    width: 70px;
+    height: 70px;
+    margin: 15px;
+    transition: all 1s;
+    color: rgb(108,158,158);
+    border: none;
+    background-color: rgb(24,21,51);
 }
 button:hover {
-	background-color: rgb(32,30,64);
-	cursor: pointer;
+    cursor: pointer;
+    background-color: rgb(32,30,64);
 }
 
 /*outline 去掉点击button时的边框效果*/
 button:focus {
-	outline: 0;
+    outline: 0;
 }
 
 button:focus:after {
-	animation: zoom 1s;
-	animation-iteration-count: 1;
-	animation-fill-mode: both;
-	content: attr(data-num);
-	font-size: 80px;
-	position: absolute;
-	left: 50%;
-	top: -0.8em;
-	text-align: center;
-	opacity: 0;
-	width: 50px;
-	cursor: default;
+    font-size: 80px;
+    position: absolute;
+    top: -.8em;
+    left: 50%;
+    width: 50px;
+    content: attr(data-num);
+    cursor: default;
+    animation: zoom 1s;
+    animation-iteration-count: 1;
+    text-align: center;
+    opacity: 0;
+    animation-fill-mode: both;
 }
 .oper:focus::after {
-	content: attr(data-oper);
-	margin-left: -80px;
-	width: 200px;
+    width: 200px;
+    margin-left: -80px;
+    content: attr(data-oper);
 }
 .equal:focus::after {
-	content: attr(data-result);
-	width: 800px;
-	margin-left: -380px;
-
+    width: 800px;
+    margin-left: -380px;
+    content: attr(data-result);
 }
 
 /*flex对text-overflow: ellipsis有干扰*/
 .view {
-	margin: 15px;
-	width: 270px;
-	text-align: right;
-	font-size: 1.7em;
-	line-height: 70px;
-	color: rgb(150,70,130);
-	overflow: hidden;
-	text-overflow: ellipsis;
+    font-size: 1.7em;
+    line-height: 70px;
+    overflow: hidden;
+    width: 270px;
+    margin: 15px;
+    text-align: right;
+    text-overflow: ellipsis;
+    color: rgb(150,70,130);
 }
 
 .reset {
-	width: 200px;
-	height: 50px;
-	background-color: rgb(75,42,56);
-	color: #fff;
-	opacity: 0.5;
-	position: absolute;
-	top: -5em;
-	transition: all 1s;
+    position: absolute;
+    top: -5em;
+    width: 200px;
+    height: 50px;
+    transition: all 1s;
+    opacity: .5;
+    color: #fff;
+    background-color: rgb(75,42,56);
 }
 .reset:hover {
-	background-color: rgb(210,120,116);
-	color: #100a1c;
+    color: #100a1c;
+    background-color: rgb(210,120,116);
 }
 .reset.show {
-	top: 10em;
-	animation: fadein 4s;
+    top: 10em;
+    animation: fadein 4s;
 }
 .broken {
-	animation: broken 2s;
-	transform: translate3d(0,-2000px,0);
-	opacity: 0;
+    transform: translate3d(0,-2000px,0);
+    animation: broken 2s;
+    opacity: 0;
 }
 p {
-	position: absolute;
-	bottom: -30px;
-	right: 15px;
-	font-size: 0.8em;
+    font-size: .8em;
+    position: absolute;
+    right: 15px;
+    bottom: -30px;
 }
-p a{
-	color: rgb(108,158,158); 
+p a {
+    color: rgb(108,158,158);
 }
 
 @keyframes broken {
-	0% {
-		transform: translate3d(0,0,0);
-		opacity: 1;
-	}
-	5% {
-		transform: rotate(-5deg);
-	}
-	15% {
-		transform: rotate(5deg);	
-	}
-	20% {
-		transform: rotate(-5deg);
-	}
-	25% {
-		transform: rotate(5deg);
-	}
-	50% {
-		transform: rotate(-45deg);
-	}
-	70% {
-		transform: translate3d(0,2000px,0);
-		opacity: 1;
-	}
-	75% {
-		opacity: 0;
-	}
-	100% {
-		transform: translate3d(0,2000px,0);
-	}
+    0% {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+    5% {
+        transform: rotate(-5deg);
+    }
+    15% {
+        transform: rotate(5deg);
+    }
+    20% {
+        transform: rotate(-5deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-45deg);
+    }
+    70% {
+        transform: translate3d(0,2000px,0);
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0,2000px,0);
+    }
 }
 
 @keyframes zoom {
-	0% {
-		transform: scale(0.2);
-		opacity: 1;
-	}
-	70% {
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-	}
+    0% {
+        transform: scale(.2);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes fadein {
-	0% {
-	    top: -10em;
-	    opacity: 0;
-	 }
-	50% {
-	    opacity: 0;
-	}
-	100% {
-	    opacity: 1;
-	}
+    0% {
+        top: -10em;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @media (max-width: 480px) {
-	.calculator {
-    	width: 100%;
-    	margin-top: 35%;
-  	}
-  	.view {
-    	width: 65%;
-  	}
-  	button {
-		width: 20%;
-		margin: 2.5%;
-	}
-	button:focus:after {
-		font-size: 80px;
-		position: absolute;
-		left: 45%;
-		width: 50px;
-	}
-	
+    .calculator {
+        width: 100%;
+        margin-top: 35%;
+    }
+    .view {
+        width: 65%;
+    }
+    button {
+        width: 20%;
+        margin: 2.5%;
+    }
+    button:focus:after {
+        font-size: 80px;
+        position: absolute;
+        left: 45%;
+        width: 50px;
+    }
 }
