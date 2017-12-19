@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>简易网页时钟</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html,body {
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			font-size: 14px;
+			background-color: #000;
+		}
+		.view {
+			position: relative;
+			margin: 0 auto;
+			width: 600px;
+			height: 400px;
+			border: 3px solid #333;
+			overflow: hidden;
+		}
+		#container {
+			position: absolute;
+			z-index: 1;
+			width: 3000px;
+			
+		}
+		img {
+			float: left;
+			width: 600px;
+			height: 400px;
+		}
+		.button {
+			position: absolute;
+			bottom: 10px;
+			right: 20px;
+			z-index: 2;
+		}
+		.button span {
+			display: inline-block;
+			background-color: #f60;
+			width: 30px;
+			color: #fff;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			margin-right: 5px;
+			border-radius: 15px;
+			cursor: pointer;
+		}
+		.button span:hover {
+			background-color: #fff;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="view">
+		<div id="container" style="left: 0;">
+			<img src="http://oygrm9j0o.bkt.clouddn.com/17-12-18/75448950.jpg" alt="">
+			<img src="http://oygrm9j0o.bkt.clouddn.com/17-12-18/46509797.jpg" alt="">
+			<img src="http://oygrm9j0o.bkt.clouddn.com/17-12-18/78164261.jpg" alt="">
+			<img src="http://oygrm9j0o.bkt.clouddn.com/17-12-18/61209671.jpg" alt="">
+			<img src="http://oygrm9j0o.bkt.clouddn.com/17-12-18/81525452.jpg" alt="">
+		</div>
+		<div class="button">
+			<span style="background-color: red;">1</span>
+			<span>2</span>
+			<span>3</span>
+			<span>4</span>
+			<span>5</span>
+		</div>
+	</div>
+	
+</body>
+
+<script>
+
+
+	var wrap = document.getElementById("container");
+	var btn = document.getElementsByTagName("span");
+	var img = document.getElementsByTagName("li");
+	var index = 0;
+	// 设置left显示下一张图片
+	var nextPic = function() {
+		var curLeft = parseInt(wrap.style.left) - 600; // 下一张照片的left等于当前的left减去照片宽度600，wrap.style.left获取的值为字符串，需要进行转化。
+		if(curLeft === -3000) { // 若left为-3000，也就是最后一张照片，则重置left=0
+			wrap.style.left = 0;
+			btnStyle(index);
+		} else { // 若不是，设置当前left
+			wrap.style.left = curLeft + "px";
+			btnStyle(index);
+		}
+	};
+
+	// 设置left显示上一张图片
+	var prevPic = function () {
+		var curLeft = parseInt(wrap.style.left) + 600;  // 下一张照片的left等于当前的left加上照片宽度600，wrap.style.left获取的值为字符串，需要进行转化。
+		if(curLeft > 0) {   // 若left小于0时，也就是第一张照片，则重置left=-2400
+			wrap.style.left = "-2400px";
+			btnStyle(index);
+		} else { // 若不是，设置当前left
+			wrap.style.left = curLeft + "px";
+			btn[index].classList.add("active");
+			btnStyle(index);
+		}
+	};
+
+	// 根据图片顺序给按钮添加样式
+	var btnStyle = function(e) {
+		for ( var i = 0; i < btn.length; i++) {
+				btn[i].style = "";
+			}
+			btn[e].style.backgroundColor = "red";
+	};
+
+
+
+	// 自动播放
+	var autoPlay = function () {			
+		var show = setInterval(function () {
+			index++;
+			if(index > 4) {
+				index =0;
+			}
+			mouseHover(show); // 调用鼠标位置判断函数
+
+			nextPic();  // 显示上一张照片
+		},3000); // 每2s执行一次
+	};
+
+	// 鼠标位置判断
+	var mouseHover = function (obj) {
+		wrap.onmouseover = function () { // 若鼠标移入则停止interval
+			clearInterval(obj);
+		}
+		wrap.onmouseout = function () { // 若鼠标移出，继续执行autoPlay
+			autoPlay(); 
+		}
+	};
+	
+
+	autoPlay();
+
+
+
+</script>
+</html>
