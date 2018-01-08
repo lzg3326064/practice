@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid布局</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="prism.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1>Grid布局</h1>
+	    <p>这篇关于grid布局的学习文章，是参考愚人码头的<a href="http://www.css88.com/archives/8510" target="_blank">教程</a>所写。<br/>在此感谢愚人码头这篇非常详细的教程。<br/>以下为教程中所有布局的实现，毕竟眼过千遍不如手敲一遍。已上传至<a href="#" target="_blank">GitHub</a></p>
+	    <p>CSS Grid布局(又称为“Grid网格”),是一个二维的基于网格的布局系统，他的目标是完全改变我们基于网格的用户界面的布局方式。</p>
+	<h2>重要术语</h2>
+	<h3>1.网格容器(Grid Container)</h3>
+		<p>应用<span>display: grid</span>的元素。这是所有网格项的直接父级元素。在这个例子中,<span>container</span>就是网格容器</p>
+		<pre><code class="language-MarkUp">
+		&lt;div class="container"&gt;
+		  	&lt;div class="item item-1"&gt;&lt;/div&gt;
+		  	&lt;div class="item item-2"&gt;&lt;/div&gt;
+		  	&lt;div class="item item-3"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		</code></pre>
+	<h3>2.网格项(Grid Item)</h3>
+		<p>网格容器的子元素。这里的<span>item</span>元素就是网格项。</p>
+		<pre><code class="language-MarkUp">
+		&lt;div class="container"&gt;
+			&lt;div class="item"&gt;&lt;/div&gt; 
+			&lt;div class="item"&gt;
+				&lt;p class="sub-item"&gt;&lt;/p&gt;
+			&lt;/div&gt;
+			&lt;div class="item"&gt;&lt;/div&gt;
+		&lt;/div&gt;
+		</code></pre>
+
+	<h3>3.网格线(Grid Line)</h3>
+	<p>构成网格结构的分界线。它们既可以是垂直的（“列网格线(column grid lines)”），也可以是水平的（“行网格线(row grid lines)”），并位于行或列的任一侧。例如，这里的黄线就是一条列网格线。</p>
+	<img src="http://oygrm9j0o.bkt.clouddn.com/18-1-1/36280359.jpg" alt="">
+	
+	<h3>4.网格轨道(Grid Track)</h3>
+	<p>两条相邻网格线之间的空间。你可以把它们想象成网格的列或行。下图是第二条和第三条 行网格线 之间的 网格轨道(Grid Track)。</p>
+	<img src="http://oygrm9j0o.bkt.clouddn.com/18-1-1/25267471.jpg" alt="">
+
+	<h3>5.网格单元格(Grid Cell)</h3>
+	<p>两个相邻的行和两个相邻的列网格线之间的空间。这是 Grid(网格) 系统的一个“单元”。下图是第1至第2条 行网格线 和第2至第3条 列网格线 交汇构成的 网格单元格(Grid Cell)。</p>
+	<img src="http://oygrm9j0o.bkt.clouddn.com/18-1-1/38656006.jpg" alt="">.
+
+	<h3>6.网格区域(Grid Area)</h3>
+	<p>网格区域(Grid Area)可以由任意数量的网格单元格(Grid Cell) 组成。下图是行网格线1和3，以及列网格线1和3之间的网格区域。</p>
+	<img src="http://oygrm9j0o.bkt.clouddn.com/18-1-1/38656006.jpg" alt="">
+
+	<h2>网格容器(Grid Container) 属性</h2>
+	
+	<h3>1. dispaly</h3>
+	<p>
+		将元素定义为网格容器，并为其内容建立新的<i>网格格式上下文</i>
+	</p>
+	<p>
+		值：display: [ grid | inline-grid | subgrid ]
+	</p>
+	<p>
+		grid: 生成要给块级网格<br>
+		inline-grid: 生成一个内联网格<br>
+		subgrid: 如果网格容器本身是另一个网格的网格项（即嵌套网格），你可以使用这个属性来表示
+	</p>
+	<pre><code class="language-css">
+	.container {
+    	display: grid | inline-grid | subgrid;
+	}
+	</code></pre>
+
+	<h3>2. grid-template-columns / grid-template-rows</h3>
+	<p>使用空格分隔的值列表，用来定义网格的列和行。这些值表示 网格轨道(Grid Track)大小，它们之间的空格表示网格线。</p>
+	<p>
+		值：&lt;track-size&gt;可以是长度值，百分比，或者等份网格容器中可用空间（使用 fr 单位）<br>
+		&lt;line-name&gt;：可以选择的任意名称
+	</p>
+
+	<pre><code class="language-css">
+	.container {
+    	grid-template-columns: &lt;track-size&gt; ... | &lt;line-name&gt; &lt;track-size&gt; ...;
+    	grid-template-rows: &lt;track-size&gt; ... | &lt;line-name&gt; &lt;track-size&gt; ...;
+	}
+	</code></pre>
+
+	
+}
+
+
+
+
+
+
+
+<script type="text/javascript" src="prism.js"></script>
+</body>
+</html>

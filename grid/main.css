@@ -1,0 +1,36 @@
+body
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #595b66;
+    background-color: #e2e2e2;
+}
+p,pre
+{
+    line-height: 2em;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #888;
+}
+pre {
+    background-color: #fff;
+    color: #555;
+}
+h1,h2,h3
+{
+    color: #888;
+}
+h1
+{
+    padding-bottom: 15px;
+    border-bottom: 3px solid #888;
+}
+a
+{
+    color: #20b2aa;
+}
+
+
+
